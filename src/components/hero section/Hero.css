@@ -2,7 +2,6 @@
   background-color: rgba(0, 255, 255, 0);
 }
 
-.illu-minati-img-cls {
-  transform: skewY(10deg);
-  width: 150px;
+.span-sec-visi {
+  color: blue;
 }

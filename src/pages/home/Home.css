@@ -1,12 +1,13 @@
 .Home-page-outer-component {
   padding: 0px;
+  padding-top: 600px;
   margin: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
   overflow-y: hidden;
+  position: relative;
 }
 
 .banner-functions-and-features-container {

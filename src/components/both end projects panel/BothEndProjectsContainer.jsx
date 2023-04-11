@@ -19,7 +19,8 @@ const BothEndProjectsContainer = () => {
         sx={{
           display: "flex",
           backgroundColor: "#2121227a",
-          width: "65%",
+          width: "90%",
+          maxWidth: "1250px",
           justifyContent: "space-between",
           padding: "0",
           borderRadius: "20px 20px 0px 0px",
