@@ -41,7 +41,7 @@ const Hero = () => {
             Hi,
             <br />I am a Web Developer
           </div>
-          <img className="illu-minati-img-cls" src={illuIcon} alt="iconIllu" />
+          {/* <img className="illu-minati-img-cls" src={illuIcon} alt="iconIllu" /> */}
         </Typography>
       </Box>
     </Container>
