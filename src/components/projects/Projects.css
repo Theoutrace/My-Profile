@@ -1,0 +1,65 @@
+.in-landscape-project-pannel {
+  height: 100%;
+  border-radius: 5px;
+  background: #e1e1e13d;
+  backdrop-filter: blur(12.1px);
+  -webkit-backdrop-filter: blur(12.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.841);
+  position: relative;
+}
+
+.in-landscape-project-pannel button {
+  background-image: linear-gradient(
+    80deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-landscape-project-pannel p {
+  background-color: #c1f6d5a4;
+  text-align: left;
+  padding: 5px 20px;
+  margin: 0px 20px;
+  border-radius: 10px;
+  display: flex;
+  width: fit-content;
+}
+.h2-cls-details-in-prjct-dtls {
+  color: #960e8f;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.used-skills-all-frontend-projects {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.used-skills-all-frontend-projects p {
+  margin: 5px 20px;
+}
+
+.used-skills-all-frontend-projects img {
+  width: 45px;
+  margin: 6px;
+}

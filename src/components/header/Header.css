@@ -1,0 +1,70 @@
+.span-div-header-logo {
+  color: rgb(41, 183, 72);
+  font-size: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.span-div-header-logo-m {
+  color: rgb(41, 183, 72);
+  font-size: 45px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -5px;
+}
+
+.active {
+  text-decoration: none;
+  color: #e8f2f2;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+.inActive {
+  text-decoration: none;
+  color: #abc2c2;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+.active-m {
+  text-decoration: none;
+  color: #e8f2f2;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  position: relative;
+}
+.inActive-m {
+  text-decoration: none;
+  position: relative;
+  color: #abc2c2;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+.cls-marker-bdr-in-selected-opt {
+  position: absolute;
+  background-color: #29b748;
+  border-radius: 0px 10px 10px 0px;
+  width: 6px;
+  height: 40px;
+  left: 0px;
+}
+.inActive-m .cls-marker-bdr-in-selected-opt {
+  background-color: #abc2c200;
+}

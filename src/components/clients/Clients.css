@@ -1,0 +1,26 @@
+.clients-outer-div {
+  background-color: rgb(30, 144, 144);
+  width: 100%;
+  overflow-x: hidden;
+  border-radius: 0px;
+  padding: 20px;
+  height: 600px;
+}
+
+.carousel-cls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer-aro {
+  cursor: pointer;
+  margin: -30px;
+  position: relative;
+  z-index: 5;
+}
+
+.img-dir-left-for-right {
+  transform: rotate(180deg);
+  margin-left: -20px;
+}

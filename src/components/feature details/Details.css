@@ -1,0 +1,67 @@
+.Features-details-single-outer {
+  width: 100%;
+  position: relative;
+}
+
+.dual-details-functions-container-h2 {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.overlay-gls-user {
+  background-color: rgba(65, 55, 63, 0.341);
+  background-image: linear-gradient(
+    180deg,
+    #060606 0%,
+    #8c0b932d 50%,
+    #32157528 100%
+  );
+  height: 300px;
+  width: 600px;
+  position: absolute;
+  bottom: -35px;
+  left: -50px;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-gls-user h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.overlay-gls-user h2 span {
+  color: #29b748;
+  padding: 2px 5px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+.overlay-gls-user h3 {
+  position: absolute;
+  bottom: -10px;
+  font-size: 20px;
+  font-weight: 400;
+  right: 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.2;
+  padding: 10px 20px;
+  background-image: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

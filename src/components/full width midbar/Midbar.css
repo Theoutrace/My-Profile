@@ -1,0 +1,16 @@
+.brand-cntnr-all-dv-cnt {
+  display: flex;
+  overflow-x: hidden;
+}
+.case-handle-heading-cmplx-text {
+  width: 250px;
+  text-align: left;
+  margin-right: 20px;
+  /* background-color: rgba(225, 231, 236, 0.076); */
+  margin-left: 10px;
+}
+
+.case-handle-heading-cmplx-text h4 {
+  font-weight: 400;
+  font-size: 20px;
+}

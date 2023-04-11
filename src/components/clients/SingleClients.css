@@ -1,0 +1,28 @@
+.client-website-website {
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  color: #333333;
+  text-align: left;
+}
+
+.client-website-text {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0px;
+  color: black;
+  padding: 0px;
+}
+
+.p-intro-client-single {
+  padding: 0px 20px;
+  margin: 0px;
+}
+
+.about-text--client-single {
+  padding: 10px 20px;
+  margin: 0px;
+  font-weight: 400;
+  font-size: 20px;
+}
