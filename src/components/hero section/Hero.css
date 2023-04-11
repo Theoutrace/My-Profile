@@ -5,3 +5,18 @@
 .span-sec-visi {
   color: blue;
 }
+
+/* for react animation */
+
+.item {
+  background-color: rgb(142, 36, 174);
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-width: 1200;
+  justify-content: left;
+}

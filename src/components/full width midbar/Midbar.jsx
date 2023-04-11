@@ -29,7 +29,6 @@ const Midbar = () => {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#960E0E",
-        // backgroundColor: "rgba(225, 231, 236, 0.076)",
         overflowY: "hidden",
         marginBottom: "0px",
       }}
