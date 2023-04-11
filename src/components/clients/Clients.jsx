@@ -52,6 +52,7 @@ const Clients = () => {
     <Box
       sx={{
         width: "65%",
+        minWidth: "1200px",
         borderRadius: "10px",
         marginBottom: "75px",
         display: "flex",

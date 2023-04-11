@@ -24,7 +24,7 @@ const Midbar = () => {
       style={{
         width: "99.16vw",
         margin: "0px",
-        padding: "10px 50px 0px 50px",
+        padding: "10px 50px 10px 50px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -40,6 +40,7 @@ const Midbar = () => {
           justifyContent: "space-between",
           alignItems: "center",
           width: "70%",
+          minWidth: "1250px",
           padding: "0px 30px",
         }}
       >
