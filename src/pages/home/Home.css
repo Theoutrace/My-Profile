@@ -139,29 +139,8 @@
   margin-top: 50px;
 }
 
-.clients-quote-ho-cntnr-p {
-  color: #333333;
-  margin: 0px;
-  margin-bottom: 40px;
-  max-width: 750px;
-}
-
-.clients-quote-ho-cntnr-p span {
-  color: #29b748;
-  margin-left: 5px;
-}
-
 .in-lower-pannel-for-clr {
   color: #c7c0c0;
-}
-
-.h2-in-personal-project-heading-clr {
-  color: #ffffff;
-}
-
-.h2-in-personal-project-heading-clr span {
-  color: #931717;
-  font-weight: 800;
 }
 
 .img-cntnr-in-personal-projects-top {
@@ -194,4 +173,11 @@
   border-radius: 5px;
   margin: 20px;
   width: 560px;
+}
+
+.h2-project-main-heading {
+  color: #960e0e;
+  font-size: 45px;
+  font-weight: 400;
+  margin: 10px 20px;
 }

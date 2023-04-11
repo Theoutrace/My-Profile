@@ -1,0 +1,38 @@
+.developer-core-end-backend-or-frontend-cls {
+  margin: 0px;
+  padding: 10px 30px;
+  width: 50%;
+  margin: 1px;
+  height: 100%;
+  font-size: 25px;
+  font: 400;
+  cursor: pointer;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-stack-selected-btn-clr {
+  background-color: #321575;
+  border-radius: 20px 20px 0px 0px;
+  width: 95%;
+  height: 100%;
+  font-weight: 600;
+  height: 65px;
+}
+
+.full-stack-selected-btn-clr span {
+  color: #29b748;
+  margin-right: 10px;
+}
+
+.not-selected {
+  font-size: 16px;
+  font-weight: 400;
+  color: #454547;
+}
+
+.conf-statement-opening-both-type-projects-cls {
+  color: #9e9ea9;
+}

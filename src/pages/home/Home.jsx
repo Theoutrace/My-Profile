@@ -25,6 +25,7 @@ import plusIcon from "./images/plus.png";
 import Details from "../../components/feature details/Details";
 import Clients from "../../components/clients/Clients";
 import Projects from "../../components/projects/Projects";
+import BothEndProjectsContainer from "../../components/both end projects panel/BothEndProjectsContainer";
 
 const Home = () => {
   const DummyArrayFunctions = [
@@ -153,7 +154,7 @@ const Home = () => {
           backgroundColor: "black",
         }}
       >
-        <Projects />
+        <BothEndProjectsContainer />
       </Box>
     </div>
   );

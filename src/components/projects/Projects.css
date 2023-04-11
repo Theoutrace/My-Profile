@@ -8,6 +8,19 @@
   color: rgba(0, 0, 0, 0.841);
   position: relative;
 }
+.h2-in-personal-project-heading-clr {
+  color: #ffffff;
+  background-color: #321575;
+  width: 65%;
+  font-size: 30px;
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px;
+}
+
+.h2-in-personal-project-heading-clr span {
+  color: #29b748;
+  font-weight: 800;
+}
 
 .in-landscape-project-pannel button {
   background-image: linear-gradient(
@@ -62,4 +75,17 @@
 .used-skills-all-frontend-projects img {
   width: 45px;
   margin: 6px;
+}
+
+.clients-quote-ho-cntnr-p {
+  color: #a9a9a9;
+  margin: 0px;
+  margin-bottom: 40px;
+  width: 56%;
+  font-size: 15px;
+}
+
+.clients-quote-ho-cntnr-p span {
+  color: #29b748;
+  margin-left: 5px;
 }

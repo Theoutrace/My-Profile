@@ -12,8 +12,10 @@ const Hero = () => {
         padding: "0px",
         paddingTop: "50px",
         margin: "0px",
-        width: "100vw",
-        backgroundColor: "black",
+        width: "100%",
+        height: "600px",
+        backgroundColor: "grey",
+        marginBottom: "80px",
       }}
     >
       <Box
@@ -41,7 +43,6 @@ const Hero = () => {
             Hi,
             <br />I am a Web Developer
           </div>
-          {/* <img className="illu-minati-img-cls" src={illuIcon} alt="iconIllu" /> */}
         </Typography>
       </Box>
     </Container>
