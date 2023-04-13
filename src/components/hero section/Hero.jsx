@@ -14,6 +14,7 @@ import reactIcon from "../projects/images/react.png";
 import reduxIcon from "../projects/images/redux.png";
 import scssIcon from "../projects/images/scss.png";
 import expressIcon from "../projects/images/express.png";
+import sequelizeIcon from "../projects/images/sequelize.png";
 
 const Brands = [
   { delay: 100, y: 100, image: reactIcon },
@@ -21,11 +22,12 @@ const Brands = [
   { delay: 300, y: 100, image: nodeIcon },
   { delay: 400, y: 100, image: expressIcon },
   { delay: 500, y: 100, image: mysqlIcon },
-  { delay: 600, y: 100, image: socketIcon },
-  { delay: 700, y: 100, image: muiIcon },
-  { delay: 800, y: 100, image: scssIcon },
-  { delay: 900, y: 100, image: htmlIcon },
-  { delay: 1000, y: 100, image: cssIcon },
+  { delay: 600, y: 100, image: sequelizeIcon },
+  { delay: 700, y: 100, image: socketIcon },
+  { delay: 800, y: 100, image: muiIcon },
+  { delay: 900, y: 100, image: scssIcon },
+  { delay: 1000, y: 100, image: htmlIcon },
+  { delay: 1100, y: 100, image: cssIcon },
 ];
 const Hero = () => {
   const myRef = useRef(); // <-------------
@@ -138,7 +140,7 @@ const Hero = () => {
                 ...style,
               }}
             >
-              <img src={item.image} width="40" />
+              <img src={item.image} width="40" height="40" />
             </animated.div>
           ))}
         </div>

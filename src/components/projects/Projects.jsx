@@ -15,6 +15,7 @@ import mysqllLogo from "./images/mysql.png";
 import nodeLogo from "./images/node.png";
 import socketIoLogo from "./images/logosocket.png";
 import htmlLogo from "./images/html.png";
+import sequelizeLogo from "./images/sequelize.png";
 import firebaseLogo from "../full width midbar/images/firebase.png";
 import "./Projects.css";
 
@@ -40,6 +41,9 @@ const Projects = (props) => {
             </Tooltip>
             <Tooltip title="MySql">
               <img src={mysqllLogo} />
+            </Tooltip>
+            <Tooltip title="Sequelize">
+              <img src={sequelizeLogo} />
             </Tooltip>
             <Tooltip title="SocketIO">
               <img src={socketIoLogo} />
