@@ -1,13 +1,14 @@
 .Home-page-outer-component {
   padding: 0px;
-  padding-top: 600px;
+  padding-top: 550px;
   margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   overflow-y: hidden;
-  position: relative;
+  /* position: absolute; */
+  /* left: 0; */
 }
 
 .banner-functions-and-features-container {
@@ -19,6 +20,7 @@
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
+  position: relative;
 }
 
 .dual-banner-functions-and-features-container {

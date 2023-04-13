@@ -14,6 +14,7 @@ import reactIcon from "../projects/images/react.png";
 import reduxIcon from "../projects/images/redux.png";
 import scssIcon from "../projects/images/scss.png";
 import expressIcon from "../projects/images/express.png";
+
 const Brands = [
   { delay: 100, y: 100, image: reactIcon },
   { delay: 200, y: 100, image: reduxIcon },
@@ -29,8 +30,9 @@ const Brands = [
 const Hero = () => {
   const myRef = useRef(); // <-------------
   const [items, setItems] = useState([]);
+
   const transition = useTransition(items, {
-    from: { opacity: 0, x: 20, y: 120 },
+    from: { opacity: 0, x: 0, y: 0 },
     enter: (item) => (next) =>
       next({
         opacity: 1,
@@ -45,34 +47,29 @@ const Hero = () => {
       const entry = entries[0];
       if (entry.isIntersecting) {
         setItems(() => [...Brands]);
-      } else {
-        setItems(() => []);
+        setOverlay(() => true);
       }
     });
     observer.observe(myRef.current);
   }, []);
   return (
-    <Box
-      sx={{
-        padding: "0px",
-        paddingTop: "0px",
-        width: "100%",
-        left: "0px",
-        height: "700px",
-        position: "absolute",
-        top: "0px",
-        display: "flex",
-        justifyContent: "center",
-        backgroundColor: "#f5f5f7",
-      }}
-    >
+    <div className="hero-outer-dv-rp-box-fr-image">
       <Box
         sx={{
-          width: "65%",
-          minWidth: "1200px",
+          width: "100%",
+          minWidth: "1250px",
           margin: "0px",
-          paddingTop: "200px",
-          height: "600px",
+          padding: "10px 50px",
+          paddingTop: "150px",
+          height: "680px",
+          borderRadius: "0px 0px 100px 100px",
+          position: "absolute",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "white",
+          paddingBottom: "120px",
         }}
       >
         <Typography
@@ -85,9 +82,12 @@ const Hero = () => {
             textAlign: "left",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "200px",
+            height: "180px",
             padding: "10px",
             color: "black",
+            position: "relative",
+            minWidth: "1200px",
+            width: "65%",
           }}
         >
           <div className="hero-div-cls-home">
@@ -108,7 +108,10 @@ const Hero = () => {
               Let Me Bring Your Ideas to Life with Creative Innovation
             </Typography>
 
-            <Typography variant="h6" sx={{ width: "800px", marginTop: "20px" }}>
+            <Typography
+              variant="h6"
+              sx={{ width: "800px", marginTop: "20px", fontSize: "18px" }}
+            >
               Hi, my name is Prakash, and I am a Passionate Full Stack Developer
               with expertise in React js, Node.js, Express, Sequelize,
               JavaScript, HTML, CSS, SCSS, MaterialUI, Bootstrap and more. With
@@ -140,7 +143,7 @@ const Hero = () => {
           ))}
         </div>
       </Box>
-    </Box>
+    </div>
   );
 };
 
