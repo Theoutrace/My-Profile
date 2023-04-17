@@ -1,12 +1,20 @@
 .brand-cntnr-all-dv-cnt {
   display: flex;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.brand-cntnr-all-dv-cnt img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .case-handle-heading-cmplx-text {
   width: 250px;
   text-align: left;
   margin-right: 20px;
-  /* background-color: rgba(225, 231, 236, 0.076); */
   margin-left: 10px;
 }
 

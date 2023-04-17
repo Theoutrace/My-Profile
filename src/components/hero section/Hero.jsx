@@ -49,7 +49,6 @@ const Hero = () => {
       const entry = entries[0];
       if (entry.isIntersecting) {
         setItems(() => [...Brands]);
-        setOverlay(() => true);
       }
     });
     observer.observe(myRef.current);
