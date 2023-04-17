@@ -14,6 +14,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import "./Header.css";
+import WarningHeader from "../under development warning header/WarningHeader";
+import underConstructionIcon from "./images/undercons.png";
 
 const drawerWidth = 240;
 const navItems = [
@@ -42,7 +44,11 @@ function Header(props) {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", backgroundColor: "#333333", height: "100%" }}
+      sx={{
+        textAlign: "center",
+        backgroundColor: "#333333",
+        height: "100%",
+      }}
     >
       <Typography
         variant="h6"
@@ -126,7 +132,17 @@ function Header(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: "#333333" }}>
+
+      <AppBar
+        component="nav"
+        sx={{
+          backgroundColor: "#333333",
+        }}
+      >
+        <WarningHeader
+          text="Exciting changes are coming soon! This site is currently under construction."
+          icon={underConstructionIcon}
+        />
         <Toolbar>
           <IconButton
             color="inherit"
