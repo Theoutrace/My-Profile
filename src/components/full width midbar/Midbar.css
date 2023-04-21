@@ -12,7 +12,7 @@
   align-items: center;
 }
 .case-handle-heading-cmplx-text {
-  width: 250px;
+  width: 30%;
   text-align: left;
   margin-right: 20px;
   margin-left: 10px;
@@ -20,5 +20,6 @@
 
 .case-handle-heading-cmplx-text h4 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 30px;
+  margin: 10px 20px;
 }

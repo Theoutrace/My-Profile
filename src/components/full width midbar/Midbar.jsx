@@ -61,7 +61,7 @@ const Midbar = () => {
   return (
     <div
       style={{
-        width: "99.16vw",
+        width: "100vw",
         margin: "0px",
         padding: "10px 50px 10px 50px",
         display: "flex",
@@ -72,6 +72,7 @@ const Midbar = () => {
         marginBottom: "0px",
         position: "relative",
         minWidth: "1250px",
+        overflow: "hidden",
       }}
     >
       <Box

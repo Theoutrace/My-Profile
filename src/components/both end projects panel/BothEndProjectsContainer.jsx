@@ -15,41 +15,31 @@ const BothEndProjectsContainer = () => {
           projects can provide a better understanding.
         </p>
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          backgroundColor: "#2121227a",
-          width: "90%",
-          maxWidth: "1250px",
-          justifyContent: "space-between",
-          padding: "0",
-          borderRadius: "20px 20px 0px 0px",
-          marginTop: "50px",
-          marginBottom: "20px",
-        }}
-      >
-        <h2
-          className={`developer-core-end-backend-or-frontend-cls ${
-            showFullStack ? "full-stack-selected-btn-clr" : "not-selected"
-          }`}
-          onClick={() => setShowFullStack(true)}
-        >
-          <span>Full Stack Projects</span>
-        </h2>
-        <h2
-          className={`developer-core-end-backend-or-frontend-cls ${
-            showFullStack ? "not-selected" : "full-stack-selected-btn-clr"
-          }`}
-          onClick={() => setShowFullStack(false)}
-        >
-          <span>Front End Projects</span>
-        </h2>
-      </Box>
-      {showFullStack ? (
-        <Projects heading="Full-Stack" />
-      ) : (
-        <Projects heading="Front-End" />
-      )}
+      <div className="pro-in-sec-con-in-switch-both">
+        <div className="switch-selec-both-on-off">
+          <h2
+            className={`developer-core-end-backend-or-frontend-cls ${
+              showFullStack ? "full-stack-selected-btn-clr" : "not-selected"
+            }`}
+            onClick={() => setShowFullStack(true)}
+          >
+            <span>Full Stack Projects</span>
+          </h2>
+          <h2
+            className={`developer-core-end-backend-or-frontend-cls ${
+              showFullStack ? "not-selected" : "full-stack-selected-btn-clr"
+            }`}
+            onClick={() => setShowFullStack(false)}
+          >
+            <span>Front End Projects</span>
+          </h2>
+        </div>
+        {showFullStack ? (
+          <Projects heading="Full-Stack" />
+        ) : (
+          <Projects heading="Front-End" />
+        )}
+      </div>
     </>
   );
 };

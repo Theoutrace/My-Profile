@@ -15,6 +15,7 @@ import reduxIcon from "../projects/images/redux.png";
 import scssIcon from "../projects/images/scss.png";
 import expressIcon from "../projects/images/express.png";
 import sequelizeIcon from "../projects/images/sequelize.png";
+import heroVid from "./video/hero-vid9.mp4";
 
 const Brands = [
   { delay: 100, y: 100, image: reactIcon },
@@ -34,14 +35,15 @@ const Hero = () => {
   const [items, setItems] = useState([]);
 
   const transition = useTransition(items, {
-    from: { opacity: 0, x: 0, y: 0 },
-    enter: (item) => (next) =>
+    from: { opacity: 0, x: 0, y: -100 },
+    enter: (item) => (next) => {
       next({
         opacity: 1,
         x: 0,
-        y: item.y,
+        y: 0,
         delay: item.delay,
-      }),
+      });
+    },
   });
 
   useEffect(() => {
@@ -54,78 +56,24 @@ const Hero = () => {
     observer.observe(myRef.current);
   }, []);
   return (
-    <div className="hero-outer-dv-rp-box-fr-image">
-      <Box
-        sx={{
-          width: "100%",
-          minWidth: "1250px",
-          margin: "0px",
-          padding: "10px 50px",
-          paddingTop: "150px",
-          height: "680px",
-          borderRadius: "0px 0px 100px 100px",
-          position: "absolute",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "white",
-          paddingBottom: "120px",
-        }}
-      >
-        <Typography
-          variant="h1"
-          component="h2"
-          sx={{
-            fontWeight: "700",
-            display: { sm: "flex", xs: "none" },
-            fontSize: "40px",
-            textAlign: "left",
-            justifyContent: "space-between",
-            alignItems: "center",
-            height: "180px",
-            padding: "10px",
-            color: "black",
-            position: "relative",
-            minWidth: "1200px",
-            width: "65%",
-          }}
-        >
-          <div className="hero-div-cls-home">
-            <Typography
-              variant="h2"
-              sx={{
-                marginTop: "20px",
-                marginBottom: "20px",
-                fontWeight: "700",
-              }}
-            >
-              Revolutionize Your <span className="span-sec-visi">Vision</span>
-            </Typography>
-            <Typography
-              variant="h4"
-              sx={{ marginTop: "20px", fontSize: "30px" }}
-            >
-              Let Me Bring Your Ideas to Life with Creative Innovation
-            </Typography>
+    <div className="hero-outer-dv-container">
+      <video src={heroVid} playsInline autoPlay muted loop type="video/mp4" />
+      <div className="hero-content-heading-sub-pic-text-container">
+        <div className="hero-div-cls-home">
+          <h2>
+            Revolutionize Your <span className="span-sec-visi">Vision</span>
+          </h2>
+          <h3>Let Me Bring Your Ideas to Life with Creative Innovation</h3>
 
-            <Typography
-              variant="h6"
-              sx={{ width: "800px", marginTop: "20px", fontSize: "18px" }}
-            >
-              Hi, my name is Prakash, and I am a Passionate Full Stack Developer
-              with expertise in React js, Node.js, Express, Sequelize,
-              JavaScript, HTML, CSS, SCSS, MaterialUI, Bootstrap and more. With
-              30K+ lines of code written, I deliver cutting-edge solutions to
-              bring your revolutionary ideas to life. Let's work together to
-              create something amazing. Contact me today!
-            </Typography>
-          </div>
-          <div>
-            <img src={mernIcon} width="400" />
-          </div>
-        </Typography>
-
+          <h5>
+            Hi, my name is Prakash, and I am a Passionate Full Stack Developer
+            with expertise in React js, Node.js, Express, Sequelize, JavaScript,
+            HTML, CSS, SCSS, MaterialUI, Bootstrap and more. With 30K+ lines of
+            code written, I deliver cutting-edge solutions to bring your
+            revolutionary ideas to life. Let's work together to create something
+            amazing. Contact me today!
+          </h5>
+        </div>
         <div className="container" ref={myRef}>
           {transition((style, item) => (
             <animated.div
@@ -143,7 +91,7 @@ const Hero = () => {
             </animated.div>
           ))}
         </div>
-      </Box>
+      </div>
     </div>
   );
 };

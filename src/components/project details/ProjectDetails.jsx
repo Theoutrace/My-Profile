@@ -70,6 +70,7 @@ const ProjectDetails = (props) => {
         })}
       </Box>
       <button
+        className="open-selected-project-in-new-tab-btn"
         onClick={() =>
           window.open(
             "https://6425ccf5a6c23826ccd97098--fascinating-capybara-906eef.netlify.app/",

@@ -1,39 +1,68 @@
-.hero-outer-dv-rp-box-fr-image {
-  padding: 0px;
-  padding-top: 0px;
-  width: 100%;
-  left: 0px;
-  /* height: 680px; */
-  position: absolute;
-  top: 0px;
+.hero-outer-dv-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: "#f5f5f7";
+  align-items: center;
+  position: relative;
+  /* max-width: 1250px; */
+  width: 100%;
+  max-width: 100%;
+  background-color: #392076;
+  box-sizing: border-box;
+  padding: 20px;
+  /* border-radius: 0px 0px 20px 20px; */
+  padding-top: 70px;
+  overflow: hidden;
+  height: 620px;
+  border: 0px solid rgba(128, 128, 128, 0);
+}
+
+.hero-outer-dv-container video {
+  position: absolute;
+}
+
+.hero-content-heading-sub-pic-text-container {
+  max-width: 1200px;
+  position: absolute;
+  top: 50px;
 }
 
 .hero-div-cls-home {
-  background-color: rgba(35, 170, 170, 0);
-  position: relative;
+  color: rgb(198, 209, 209);
+  padding: 0px 0px 0px 0px;
+}
+
+.hero-div-cls-home h2 {
+  font-size: 90px;
+  padding: 0px;
+  margin: 50px 0px 10px 0px;
+  padding: 0px;
+}
+
+.hero-div-cls-home h3 {
+  font-size: 35px;
+  margin: -25px 0px 10px 0px;
+  padding: 0px 5px;
+  color: #9fa5a0;
+}
+
+.hero-div-cls-home h5 {
+  width: 70%;
+  word-spacing: 5px;
+  font-size: 20px;
+  padding: 0px 5px;
+  margin: 10px 0px 20px 0px;
+  font-weight: 500;
+  color: #b9c0ba;
 }
 
 .span-sec-visi {
-  color: blue;
-}
-
-/* for react animation */
-
-.item {
-  background-color: rgb(142, 36, 174);
-  width: 100px;
-  height: 100px;
+  color: #29b748;
 }
 
 .container {
   display: flex;
   align-items: center;
-  width: 65%;
-  padding: 10px 15px;
-  min-width: 1250px;
   justify-content: left;
-  margin-left: 5px;
+  width: 100%;
 }

@@ -77,18 +77,16 @@ const Home = () => {
 
   return (
     <div className="Home-page-outer-component">
-      <Suspense
-        fallback={<Skeleton height={200} animation="wave" width={1150} />}
-      >
+      <Suspense fallback={<Skeleton height={200} animation="wave" />}>
         <Hero />
       </Suspense>
-
       {transition((style, item) => (
         <animated.div
           style={{
             width: "100%",
             display: "flex",
             justifyContent: "center",
+            textAlign: "center",
             ...style,
           }}
         >
@@ -116,10 +114,15 @@ const Home = () => {
                 </div>
               </Banner>
             </Box>
-            <Box sx={{ display: { xs: "block", sm: "flex" }, width: "100%" }}>
+            <Box
+              sx={{
+                display: { xs: "block", sm: "flex" },
+                width: "100%",
+                justifyContent: "center",
+              }}
+            >
               <Box
                 sx={{
-                  height: "620px",
                   display: "flex",
                   flexDirection: "column",
                   padding: "30px",
@@ -173,8 +176,10 @@ const Home = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          padding: "70px 0px 0px 0px",
+          margin: "70px 0px 0px 0px",
           backgroundColor: "#f5f5f7",
+          overflow: "hidden",
+          textAlign: "center",
         }}
       >
         <h2 className="clients-heading-home-hm-cntnr-h2">Clients</h2>
@@ -185,19 +190,9 @@ const Home = () => {
         <Clients />
       </Box>
       <Midbar />
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "100px 0px",
-          backgroundColor: "black",
-        }}
-      >
+      <div className="project-section-in-hme-home-cont">
         <BothEndProjectsContainer />
-      </Box>
+      </div>
     </div>
   );
 };

@@ -79,7 +79,7 @@ const Projects = (props) => {
           cater to the specific needs of modern businesses and consumers.
         </p>
       )}
-      <Banner className="banner-functions-and-features-container">
+      <Banner className="banner-functions-and-features-container ">
         {props.heading !== "Full-Stack" && (
           <Box
             sx={{
@@ -87,7 +87,7 @@ const Projects = (props) => {
               display: { xs: "block", sm: "flex" },
             }}
           >
-            <Banner className="bn-one-with-aim-one lower-bnr-cls-projects">
+            <Banner className="bn-one-with-aim-one lower-bnr-cls-projects for-shadow-chkk">
               <div
                 className="img-cntnr-in-personal-projects-top"
                 onMouseEnter={() => setShowOverlay(true)}
