@@ -87,21 +87,17 @@ const Home = () => {
             display: "flex",
             justifyContent: "center",
             textAlign: "center",
+            marginTop: "-80px",
             ...style,
           }}
         >
           <Banner className="banner-functions-and-features-container">
-            <Box
-              sx={{
-                width: "100%",
-                display: { xs: "block", sm: "flex" },
-              }}
-            >
-              <Banner className="bn-one-with-aim-one">
-                <div className="img-cntnr">
-                  <img src={rocketGif} alt="" width="120px" />
+            <Banner className="bn-one-with-aim-one">
+              <div className="dv-contained-in-bnr">
+                <div className="section-dv-both">
+                  <img src={rocketGif} alt="" width="200px" />
                 </div>
-                <div className="txt-cntnr-h2-p">
+                <div className="section-dv-both">
                   <h2>
                     Software to help you move forward, <span>faster</span>
                   </h2>
@@ -112,29 +108,17 @@ const Home = () => {
                     achieving not just what you require but more.
                   </p>
                 </div>
-              </Banner>
-            </Box>
+              </div>
+            </Banner>
+
             <Box
               sx={{
                 display: { xs: "block", sm: "flex" },
-                width: "100%",
                 justifyContent: "center",
+                width: "1250px",
               }}
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: "30px",
-                  maxWidth: "600px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  borderRadius: "10px",
-                  margin: "10px",
-                  backgroundImage:
-                    "linear-gradient( 180deg, #ff057c 0%, #8d0b93 50%, #321575 100%)",
-                }}
-              >
+              <div className="cls-features-left-sec-all-features-container">
                 <h2 className="dual-banner-functions-container-h2">
                   Integrate any feature in your web app.
                 </h2>
@@ -143,27 +127,16 @@ const Home = () => {
                     return <Features item={item} />;
                   })}
                 </div>
-              </Box>
-              <Box
-                sx={{
-                  height: "620px",
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: "30px",
-                  maxWidth: "600px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  borderRadius: "10px",
-                  margin: "10px",
-                  backgroundImage:
-                    "linear-gradient( 180deg, #ff057c 0%, #8d0b93 50%, #321575 100%)",
-                }}
-              >
+              </div>
+              <div className="div-for-func-right-of-features">
+                <h2 className="dual-banner-functions-container-h2">
+                  Awesome internal properties
+                </h2>
                 <div className="features-all-container-dv-flx">
                   <Details />
                 </div>
                 <Box sx={{ backgroundColor: "blue", width: "100%" }}></Box>
-              </Box>
+              </div>
             </Box>
           </Banner>
         </animated.div>

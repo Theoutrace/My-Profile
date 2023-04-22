@@ -15,6 +15,7 @@ font-family: 'Quicksand', sans-serif;
 .App {
   font-family: "Quicksand", "Poppins", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

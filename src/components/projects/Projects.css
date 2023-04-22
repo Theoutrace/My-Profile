@@ -1,5 +1,12 @@
+.project-outer-ls-cls-cvr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .in-landscape-project-pannel {
-  height: 100%;
+  height: 350px;
   border-radius: 5px;
   background: #e1e1e13d;
   backdrop-filter: blur(12.1px);
@@ -63,9 +70,10 @@
 
 .used-skills-all-frontend-projects {
   display: flex;
-  margin: 10px;
+  margin: 0px;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .used-skills-all-frontend-projects p {
@@ -75,33 +83,53 @@
 }
 
 .used-skills-all-frontend-projects img {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   margin: 5px;
-  padding: 8px;
-  border-radius: 5px;
-  background-color: black;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
 }
 
-.clients-quote-ho-cntnr-p {
+.full-stack-or-frontend-desc-para-con-text {
+  display: flex;
+  justify-content: center;
+}
+
+.full-stack-or-frontend-desc-para-con-text .clients-quote-ho-cntnr-p {
   color: #111010;
   margin: 0px;
-  margin-bottom: 40px;
-  padding-top: 10px;
-  padding-bottom: 40px;
   width: 90%;
   font-size: 16px;
   font-weight: 500;
+  margin: 10px 0px;
 }
 
-.clients-quote-ho-cntnr-p span {
-  color: #29b748;
-  margin-left: 5px;
+.banner-functions-and-features-container {
+  margin: 10px 0px;
 }
 
-.for-shadow-chkk {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-  background-color: #1e20201a;
+.project-disp-wide-top-one {
+  background-color: #1e2020;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  height: 400px;
+}
+
+.img-cntnr-in-personal-projects-top {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cd-cls-img-wide-ban-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  aspect-ratio: 30/9;
+  border-radius: 5px;
 }

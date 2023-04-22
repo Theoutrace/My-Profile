@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import Box from "@mui/material/Box";
-import { Typography } from "@mui/material";
-import mernIcon from "./images/mern.png";
 import "./Hero.css";
 import { useTransition, animated } from "@react-spring/web";
 import htmlIcon from "../projects/images/html.png";
@@ -15,7 +13,7 @@ import reduxIcon from "../projects/images/redux.png";
 import scssIcon from "../projects/images/scss.png";
 import expressIcon from "../projects/images/express.png";
 import sequelizeIcon from "../projects/images/sequelize.png";
-import heroVid from "./video/hero-vid9.mp4";
+import heroVid from "./video/hero-vid4.mp4";
 
 const Brands = [
   { delay: 100, y: 100, image: reactIcon },
@@ -31,7 +29,7 @@ const Brands = [
   { delay: 1100, y: 100, image: cssIcon },
 ];
 const Hero = () => {
-  const myRef = useRef(); // <-------------
+  const myRef = useRef();
   const [items, setItems] = useState([]);
 
   const transition = useTransition(items, {
@@ -79,15 +77,17 @@ const Hero = () => {
             <animated.div
               style={{
                 backgroundColor: "black",
+                display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                padding: "20px",
-                borderRadius: "10px",
+                padding: "15px",
+                borderRadius: "15px",
                 margin: "5px",
+                border: "3px solid #da38f04b",
                 ...style,
               }}
             >
-              <img src={item.image} width="40" height="40" />
+              <img src={item.image} width="30" height="30" />
             </animated.div>
           ))}
         </div>

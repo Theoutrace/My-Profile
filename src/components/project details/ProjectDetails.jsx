@@ -60,6 +60,7 @@ const ProjectDetails = (props) => {
                   display: "flex",
                   justifyContent: "left",
                   alignItems: "center",
+                  fontWeight: "500",
                 }}
               >
                 <img src={tickIcon} className="img-each-step" />

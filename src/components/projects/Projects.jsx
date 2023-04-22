@@ -22,7 +22,7 @@ import "./Projects.css";
 const Projects = (props) => {
   const [showOverlay, setShowOverlay] = useState(false);
   return (
-    <>
+    <div className="project-outer-ls-cls-cvr">
       <div className="used-skills-all-frontend-projects">
         <p>Skills Used</p>
         <Tooltip title="React">
@@ -63,23 +63,27 @@ const Projects = (props) => {
           <img src={cssLogo} />
         </Tooltip>
       </div>
-      {props.heading === "Full-Stack" ? (
-        <p className="clients-quote-ho-cntnr-p in-lower-pannel-for-clr">
-          Full-stack web app development is essential for creating dynamic,
-          interactive, and user-friendly web applications. By developing both
-          the client-side and server-side of an application, I create cohesive
-          and scalable web applications that can handle a variety of complex
-          tasks.
-        </p>
-      ) : (
-        <p className="clients-quote-ho-cntnr-p in-lower-pannel-for-clr">
-          Frontend web development is essential for building user-friendly and
-          intuitive interfaces. By specializing in frontend development, I focus
-          on creating aesthetically pleasing and dynamic web applications that
-          cater to the specific needs of modern businesses and consumers.
-        </p>
-      )}
-      <Banner className="banner-functions-and-features-container ">
+      <div className="full-stack-or-frontend-desc-para-con-text">
+        {props.heading === "Full-Stack" ? (
+          <p className="clients-quote-ho-cntnr-p">
+            Full-stack web app development is essential for creating dynamic,
+            interactive, and user-friendly web applications. By developing both
+            the client-side and server-side of an application, I create cohesive
+            and scalable web applications that can handle a variety of complex
+            tasks.
+          </p>
+        ) : (
+          <p className="clients-quote-ho-cntnr-p">
+            Frontend web development is essential for building user-friendly and
+            intuitive interfaces. By specializing in frontend development, I
+            focus on creating aesthetically pleasing and dynamic web
+            applications that cater to the specific needs of modern businesses
+            and consumers.
+          </p>
+        )}
+      </div>
+
+      <Banner className="banner-functions-and-features-container">
         {props.heading !== "Full-Stack" && (
           <Box
             sx={{
@@ -87,7 +91,7 @@ const Projects = (props) => {
               display: { xs: "block", sm: "flex" },
             }}
           >
-            <Banner className="bn-one-with-aim-one lower-bnr-cls-projects for-shadow-chkk">
+            <Banner className="project-disp-wide-top-one">
               <div
                 className="img-cntnr-in-personal-projects-top"
                 onMouseEnter={() => setShowOverlay(true)}
@@ -168,7 +172,7 @@ const Projects = (props) => {
           </Box>
         </Box>
       </Banner>
-    </>
+    </div>
   );
 };
 
