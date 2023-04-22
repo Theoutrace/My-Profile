@@ -24,7 +24,6 @@ import ideaIcon from "./images/idea.png";
 import plusIcon from "./images/plus.png";
 import Details from "../../components/feature details/Details";
 const Clients = lazy(() => import("../../components/clients/Clients"));
-import Projects from "../../components/projects/Projects";
 const BothEndProjectsContainer = lazy(() =>
   import("../../components/both end projects panel/BothEndProjectsContainer")
 );
