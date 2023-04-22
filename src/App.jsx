@@ -26,7 +26,7 @@ function App() {
           might be interested in my work, please feel free to share this
           portfolio with them. I'd greatly appreciate it!
         </Typography>
-        <img src={heart} alt="" width="20px" />
+        {/* <img src={heart} alt="" width="20px" /> */}
       </Box>
     </div>
   );
