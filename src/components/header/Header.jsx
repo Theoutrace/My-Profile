@@ -29,7 +29,7 @@ const navItems = [
     to="/about"
     className={({ isActive }) => (isActive ? "active" : "inActive")}
   >
-    About
+    Resume
   </NavLink>,
 ];
 
@@ -110,7 +110,7 @@ function Header(props) {
                     isActive ? "active-m" : "inActive-m"
                   }
                 >
-                  About <div className="cls-marker-bdr-in-selected-opt"></div>
+                  Resume <div className="cls-marker-bdr-in-selected-opt"></div>
                 </NavLink>
               }
               sx={{

@@ -1,7 +1,24 @@
 .About-outer-page {
-  padding-top: 50px;
+  padding-top: 100px;
+  height: 100vh;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .about-cls-h1 {
   font-weight: 400;
+}
+
+.About-outer-page iframe {
+  width: 1250px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.185);
+  padding: 10px;
+  height: 700px;
 }

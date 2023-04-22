@@ -1,12 +1,12 @@
 import React, { Suspense, lazy, useEffect, useState } from "react";
 import "./Home.css";
 import { AppBar, Grid, Paper, Skeleton } from "@mui/material";
-import Banner from "../../components/banner/Banner";
+const Banner = lazy(() => import("../../components/banner/Banner"));
 const Hero = lazy(() => import("../../components/hero section/Hero"));
 import Box from "@mui/material/Box";
 import rocketGif from "./images/rocket.png";
 import Features from "../../components/functions features/Features";
-import Midbar from "../../components/full width midbar/Midbar";
+const Midbar = lazy(() => import("../../components/full width midbar/Midbar"));
 import userIcon from "./images/user.png";
 import cartIcon from "./images/cart.png";
 import pictureIcon from "./images/picture.png";
@@ -23,9 +23,11 @@ import questIcon from "./images/quest.png";
 import ideaIcon from "./images/idea.png";
 import plusIcon from "./images/plus.png";
 import Details from "../../components/feature details/Details";
-import Clients from "../../components/clients/Clients";
+const Clients = lazy(() => import("../../components/clients/Clients"));
 import Projects from "../../components/projects/Projects";
-import BothEndProjectsContainer from "../../components/both end projects panel/BothEndProjectsContainer";
+const BothEndProjectsContainer = lazy(() =>
+  import("../../components/both end projects panel/BothEndProjectsContainer")
+);
 import { config, useTransition, animated } from "@react-spring/web";
 
 const Home = () => {
@@ -77,95 +79,133 @@ const Home = () => {
 
   return (
     <div className="Home-page-outer-component">
-      <Suspense fallback={<Skeleton height={200} animation="wave" />}>
+      <Suspense
+        fallback={
+          <Skeleton sx={{ width: "100%", height: "500px" }} animation="wave" />
+        }
+      >
         <Hero />
       </Suspense>
-      {transition((style, item) => (
-        <animated.div
-          style={{
+      <Suspense
+        fallback={
+          <Skeleton
+            sx={{ width: "1250px", height: "900px" }}
+            animation="wave"
+          />
+        }
+      >
+        {transition((style, item) => (
+          <animated.div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "center",
+              marginTop: "-80px",
+              ...style,
+            }}
+          >
+            <Banner className="banner-functions-and-features-container">
+              <Banner className="bn-one-with-aim-one">
+                <div className="dv-contained-in-bnr">
+                  <div className="section-dv-both">
+                    <img src={rocketGif} alt="" width="200px" />
+                  </div>
+                  <div className="section-dv-both">
+                    <h2>
+                      Software to help you move forward, <span>faster</span>
+                    </h2>
+                    <p>
+                      Let me make marketing, selling, fulfilling and servicing
+                      your clients a breeze. Use my creative approach to create,
+                      structure and most importantly, help you scale your
+                      business achieving not just what you require but more.
+                    </p>
+                  </div>
+                </div>
+              </Banner>
+
+              <Box
+                sx={{
+                  display: { xs: "block", sm: "flex" },
+                  justifyContent: "center",
+                  width: "1250px",
+                }}
+              >
+                <div className="cls-features-left-sec-all-features-container">
+                  <h2 className="dual-banner-functions-container-h2">
+                    Integrate any feature in your web app.
+                  </h2>
+                  <div className="features-all-container-dv-flx">
+                    {DummyArrayFunctions.map((item) => {
+                      return <Features item={item} />;
+                    })}
+                  </div>
+                </div>
+                <div className="div-for-func-right-of-features">
+                  <h2 className="dual-banner-functions-container-h2">
+                    Awesome internal properties
+                  </h2>
+                  <div className="features-all-container-dv-flx">
+                    <Details />
+                  </div>
+                  <Box sx={{ backgroundColor: "blue", width: "100%" }}></Box>
+                </div>
+              </Box>
+            </Banner>
+          </animated.div>
+        ))}
+      </Suspense>
+
+      <Suspense
+        fallback={
+          <Skeleton
+            sx={{ width: "1250px", height: "600px" }}
+            animation="wave"
+          />
+        }
+      >
+        <Box
+          sx={{
             width: "100%",
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
+            alignItems: "center",
+            margin: "70px 0px 0px 0px",
+            backgroundColor: "#f5f5f7",
+            overflow: "hidden",
             textAlign: "center",
-            marginTop: "-80px",
-            ...style,
           }}
         >
-          <Banner className="banner-functions-and-features-container">
-            <Banner className="bn-one-with-aim-one">
-              <div className="dv-contained-in-bnr">
-                <div className="section-dv-both">
-                  <img src={rocketGif} alt="" width="200px" />
-                </div>
-                <div className="section-dv-both">
-                  <h2>
-                    Software to help you move forward, <span>faster</span>
-                  </h2>
-                  <p>
-                    Let me make marketing, selling, fulfilling and servicing
-                    your clients a breeze. Use my creative approach to create,
-                    structure and most importantly, help you scale your business
-                    achieving not just what you require but more.
-                  </p>
-                </div>
-              </div>
-            </Banner>
+          <h2 className="clients-heading-home-hm-cntnr-h2">Clients</h2>
+          <p className="clients-quote-ho-cntnr-p">
+            Client satisfaction is not just a goal, it's an
+            <span>obligation</span>
+          </p>
+          <Clients />
+        </Box>
+      </Suspense>
 
-            <Box
-              sx={{
-                display: { xs: "block", sm: "flex" },
-                justifyContent: "center",
-                width: "1250px",
-              }}
-            >
-              <div className="cls-features-left-sec-all-features-container">
-                <h2 className="dual-banner-functions-container-h2">
-                  Integrate any feature in your web app.
-                </h2>
-                <div className="features-all-container-dv-flx">
-                  {DummyArrayFunctions.map((item) => {
-                    return <Features item={item} />;
-                  })}
-                </div>
-              </div>
-              <div className="div-for-func-right-of-features">
-                <h2 className="dual-banner-functions-container-h2">
-                  Awesome internal properties
-                </h2>
-                <div className="features-all-container-dv-flx">
-                  <Details />
-                </div>
-                <Box sx={{ backgroundColor: "blue", width: "100%" }}></Box>
-              </div>
-            </Box>
-          </Banner>
-        </animated.div>
-      ))}
-
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "70px 0px 0px 0px",
-          backgroundColor: "#f5f5f7",
-          overflow: "hidden",
-          textAlign: "center",
-        }}
+      <Suspense
+        fallback={
+          <Skeleton sx={{ width: "100%", height: "200px" }} animation="wave" />
+        }
       >
-        <h2 className="clients-heading-home-hm-cntnr-h2">Clients</h2>
-        <p className="clients-quote-ho-cntnr-p">
-          Client satisfaction is not just a goal, it's an
-          <span>obligation</span>
-        </p>
-        <Clients />
-      </Box>
-      <Midbar />
-      <div className="project-section-in-hme-home-cont">
-        <BothEndProjectsContainer />
-      </div>
+        <Midbar />
+      </Suspense>
+      <Suspense
+        fallback={
+          <Skeleton
+            sx={{ width: "1250px", height: "900px" }}
+            animation="wave"
+          />
+        }
+      >
+        <div className="project-section-in-hme-home-cont">
+          <BothEndProjectsContainer />
+        </div>
+      </Suspense>
     </div>
   );
 };
