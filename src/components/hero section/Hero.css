@@ -8,15 +8,16 @@
   background-color: #000000;
   box-sizing: border-box;
   padding: 20px;
-  /* border-radius: 0px 0px 50px 50px; */
   padding-top: 70px;
   overflow: hidden;
   height: 620px;
   border: 0px solid rgba(128, 128, 128, 0);
+  font-family: poppins;
 }
 
 .hero-outer-dv-container video {
   position: absolute;
+  width: 100%;
 }
 
 .hero-content-heading-sub-pic-text-container {
@@ -26,12 +27,13 @@
 }
 
 .hero-div-cls-home {
-  color: rgb(198, 209, 209);
+  color: #c2c9c3;
   padding: 0px 0px 0px 0px;
 }
 
 .hero-div-cls-home h2 {
-  font-size: 90px;
+  font-size: 85px;
+  font-weight: 400;
   padding: 0px;
   margin: 50px 0px 10px 0px;
   padding: 0px;
@@ -41,7 +43,7 @@
   font-size: 35px;
   margin: -25px 0px 10px 0px;
   padding: 0px 5px;
-  color: #9fa5a0;
+  color: #c2c9c3;
 }
 
 .hero-div-cls-home h5 {
@@ -51,11 +53,12 @@
   padding: 0px 5px;
   margin: 10px 0px 20px 0px;
   font-weight: 500;
-  color: #b9c0ba;
+  color: #c2c9c3;
 }
 
 .span-sec-visi {
   color: #29b748;
+  font-weight: 600;
 }
 
 .container {
@@ -63,4 +66,173 @@
   align-items: center;
   justify-content: left;
   width: 100%;
+}
+/*  */
+@media screen and (max-width: 1300px) {
+  .hero-outer-dv-container {
+    height: 550px;
+  }
+  .hero-div-cls-home {
+    padding: 20px 20px 0px 20px;
+  }
+  .hero-div-cls-home h2 {
+    font-size: 70px;
+  }
+
+  .hero-div-cls-home h3 {
+    font-size: 25px;
+  }
+
+  .hero-div-cls-home h5 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    width: 750px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero-outer-dv-container {
+    height: 450px;
+  }
+  .hero-div-cls-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+  }
+  .hero-div-cls-home h2 {
+    font-size: 50px;
+  }
+
+  .hero-div-cls-home h3 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+
+  .hero-div-cls-home h5 {
+    font-size: 12px;
+    margin: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    width: 680px;
+  }
+  .container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero-outer-dv-container {
+    height: 580px;
+  }
+  .hero-outer-dv-container video {
+    position: absolute;
+    width: 1250px;
+  }
+
+  .hero-div-cls-home h5 {
+    width: 600px;
+    padding-bottom: 10px;
+  }
+  .hero-content-heading-sub-pic-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-outer-dv-container {
+    height: 780px;
+  }
+
+  .hero-div-cls-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 5px;
+    width: 500px;
+    text-align: center;
+  }
+  .hero-div-cls-home h2 {
+    font-size: 50px;
+    line-height: 45px;
+  }
+  .hero-div-cls-home h3 {
+    width: 300px;
+    margin-top: 5px;
+  }
+
+  .hero-div-cls-home h5 {
+    width: 350px;
+    margin: 0px;
+    margin-top: 5px;
+  }
+
+  .hero-content-heading-sub-pic-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .hero-outer-dv-container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-div-cls-home {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-div-cls-home h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .hero-div-cls-home h3 {
+    width: 300px;
+    text-align: center;
+  }
+
+  .hero-div-cls-home h5 {
+    width: 350px;
+    text-align: center;
+  }
+  .hero-content-heading-sub-pic-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 350px;
+    justify-content: center;
+    margin-left: 0px;
+  }
 }

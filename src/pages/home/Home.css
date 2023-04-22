@@ -9,6 +9,7 @@
   padding: 10px 0px 0px 0px;
   color: white;
   overflow-x: hidden;
+  position: relative;
 }
 
 .banner-functions-and-features-container {
@@ -99,6 +100,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.section-dv-both:nth-child(2) {
+  background-color: #42dd9528;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .section-dv-both img {
@@ -108,12 +116,21 @@
   text-align: left;
 }
 
+.graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 250px;
+}
+
 .section-dv-both h2 {
   text-align: left;
   font-size: 40px;
   font-weight: 700;
   margin: 0px;
   margin-bottom: 20px;
+  line-height: 50px;
 }
 
 .section-dv-both h2 span {
@@ -125,7 +142,6 @@
   font-size: 20px;
   margin: 0px;
   line-height: 30px;
-  padding: 0px 20px 0px 0px;
   font-weight: 500;
 }
 
@@ -191,4 +207,75 @@
 
 .clients-quote-ho-cntnr-p {
   color: black;
+}
+
+/* media */
+@media screen and (max-width: 1300px) {
+  .dv-contained-in-bnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+  }
+
+  .section-dv-both h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .section-dv-both p {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+
+  .section-dv-both img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dv-contained-in-bnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    position: relative;
+  }
+  .section-dv-both {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .section-dv-both:last-child {
+    width: 750px;
+    height: 350px;
+  }
+
+  .section-dv-both h2 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 80px;
+  }
+  .section-dv-both p {
+    font-size: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+  }
+
+  .section-dv-both img {
+    width: 80px;
+    position: absolute;
+    left: 35px;
+    top: -160px;
+  }
+}
+@media screen and (max-width: 850px) {
+}
+@media screen and (max-width: 700px) {
+}
+@media screen and (max-width: 460px) {
 }

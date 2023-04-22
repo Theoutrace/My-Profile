@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import Box from "@mui/material/Box";
 import "./Hero.css";
 import { useTransition, animated } from "@react-spring/web";
 import htmlIcon from "../projects/images/html.png";

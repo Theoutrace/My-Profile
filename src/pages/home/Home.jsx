@@ -4,7 +4,7 @@ import { AppBar, Grid, Paper, Skeleton } from "@mui/material";
 const Banner = lazy(() => import("../../components/banner/Banner"));
 const Hero = lazy(() => import("../../components/hero section/Hero"));
 import Box from "@mui/material/Box";
-import rocketGif from "./images/rocket.png";
+import rocketGif from "./images/rocket1.png";
 import Features from "../../components/functions features/Features";
 const Midbar = lazy(() => import("../../components/full width midbar/Midbar"));
 import userIcon from "./images/user.png";
@@ -108,7 +108,7 @@ const Home = () => {
               <Banner className="bn-one-with-aim-one">
                 <div className="dv-contained-in-bnr">
                   <div className="section-dv-both">
-                    <img src={rocketGif} alt="" width="200px" />
+                    <img src={rocketGif} alt="" className="graph" />
                   </div>
                   <div className="section-dv-both">
                     <h2>
