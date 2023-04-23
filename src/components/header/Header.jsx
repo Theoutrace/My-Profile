@@ -16,7 +16,7 @@ import Button from "@mui/material/Button";
 import "./Header.css";
 import WarningHeader from "../under development warning header/WarningHeader";
 import underConstructionIcon from "./images/undercons.png";
-
+import menuIcon from "./images/menu.png";
 const drawerWidth = 240;
 const navItems = [
   <NavLink
@@ -147,22 +147,34 @@ function Header(props) {
           text="Exciting changes are coming soon! This site is currently under construction."
           icon={underConstructionIcon}
         />
-        <Toolbar>
+        <Toolbar
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
             onClick={handleDrawerToggle}
             sx={{
-              width: "60px",
-              height: "60px",
+              display: { xs: "block", sm: "none" },
+              position: "absolute",
+              left: "10px",
+            }}
+          >
+            <img src={menuIcon} alt="menu" width="25px" />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            sx={{
+              width: "45px",
+              height: "45px",
               display: { sm: "none" },
               fontFamily: '"Pacifico", cursive',
               borderRadius: "10px",
               padding: "0px",
-              margin: "5px 2px",
-              fontSize: "35px",
-              backgroundColor: "black",
+              margin: "8px 20px",
+              fontSize: "25px",
+              border: "1px solid black",
             }}
           >
             P <span className="span-div-header-logo-m">.</span>
