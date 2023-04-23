@@ -197,7 +197,17 @@ function Header(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+              <Button
+                key={item}
+                sx={{
+                  color: "#fff",
+                  height: "100%",
+                  margin: "2px",
+                  padding: "5px 10px",
+                  fontSize: "16px",
+                  borderRadius: "0px",
+                }}
+              >
                 {item}
               </Button>
             ))}

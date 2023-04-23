@@ -32,17 +32,17 @@ import { config, useTransition, animated } from "@react-spring/web";
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   const DummyArrayFunctions = [
-    { text: "User Registration", icon: userIcon },
-    { text: "Cart System", icon: cartIcon },
-    { text: "Picture Upload", icon: pictureIcon },
-    { text: "E-Mail Service", icon: mailIcon },
+    { text: "Registration", icon: userIcon },
+    { text: "Cart", icon: cartIcon },
+    { text: "Pic Uploads", icon: pictureIcon },
+    { text: "E-Mail", icon: mailIcon },
     { text: "Chat", icon: chatIcon },
     { text: "Membership", icon: membershipIcon },
-    { text: "User Management", icon: userManageIcon },
+    { text: "CRM", icon: userManageIcon },
     { text: "Admin Panel", icon: adminIcon },
     { text: "File Uploads", icon: fileIcon },
     { text: "Security", icon: securityIcon },
-    { text: "Activity Tracking", icon: trackIcon },
+    { text: "Tracking", icon: trackIcon },
     {
       text: "More",
       imgs: [
@@ -124,13 +124,7 @@ const Home = () => {
                 </div>
               </Banner>
 
-              <Box
-                sx={{
-                  display: { xs: "block", sm: "flex" },
-                  justifyContent: "center",
-                  width: "1250px",
-                }}
-              >
+              <div className="features-n-fun-cntn-r">
                 <div className="cls-features-left-sec-all-features-container">
                   <h2 className="dual-banner-functions-container-h2">
                     Integrate any feature in your web app.
@@ -145,12 +139,12 @@ const Home = () => {
                   <h2 className="dual-banner-functions-container-h2">
                     Awesome internal properties
                   </h2>
-                  <div className="features-all-container-dv-flx">
+                  <div className="features-all-container-dv-flx flx-2">
                     <Details />
                   </div>
                   <Box sx={{ backgroundColor: "blue", width: "100%" }}></Box>
                 </div>
-              </Box>
+              </div>
             </Banner>
           </animated.div>
         ))}

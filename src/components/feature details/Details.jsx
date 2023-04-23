@@ -1,10 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
-import checkIcon from "./images/check.png";
 import "./Details.css";
-import Banner from "../banner/Banner";
 import userImg from "./images/user.webp";
-import lineImg from "./images/line.png";
 
 const Details = () => {
   const initialTextArray = [
@@ -35,23 +32,7 @@ const Details = () => {
           sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
         >
           {initialTextArray.map((item) => {
-            return (
-              <Box
-                sx={{
-                  minWidth: "40%",
-                  margin: "10px",
-                  backgroundColor: "white",
-                  padding: "10px 20px",
-                  borderRadius: "4px",
-                  color: "black",
-                  fontWeight: "500",
-                  boxShadow:
-                    "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-                }}
-              >
-                {item}
-              </Box>
-            );
+            return <div className="single-fun-add-feature-right">{item}</div>;
           })}
         </Box>
       </Box>
@@ -63,22 +44,14 @@ const Details = () => {
           left: "0px",
         }}
       >
-        <Box
-          sx={{
-            backgroundColor: "white",
-            borderRadius: "0px 0px 10px 10px",
-            height: "300px",
-            color: "black",
-            overflow: "hidden",
-          }}
-        >
+        <div className="image-holder-dv-in">
           <img
             src={userImg}
             alt=""
             width="625px"
             className="img-user-smile-container-in-home"
           />
-        </Box>
+        </div>
       </Box>
       <div className="overlay-gls-user">
         <h2>

@@ -66,3 +66,150 @@
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
+.single-fun-add-feature-right {
+  background-color: #29b748;
+  min-width: 40%;
+  margin: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: black;
+  font-weight: 500;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.image-holder-dv-in {
+  background-color: #29b748;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  height: 300px;
+  color: black;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+  .single-fun-add-feature-right {
+    min-width: 40%;
+    margin: 4px;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .image-holder-dv-in {
+    height: 250px;
+  }
+
+  .img-user-smile-container-in-home {
+    width: 100%;
+  }
+
+  .overlay-gls-user {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .single-fun-add-feature-right {
+    min-width: 40%;
+    margin: 5px;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .image-holder-dv-in {
+    height: 200px;
+  }
+
+  .img-user-smile-container-in-home {
+    width: 100%;
+  }
+
+  .overlay-gls-user {
+    height: 200px;
+  }
+
+  .overlay-gls-user h2 {
+    font-size: 35px;
+  }
+
+  .overlay-gls-user h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .single-fun-add-feature-right {
+    min-width: 40%;
+    margin: 5px;
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .image-holder-dv-in {
+    height: 220px;
+  }
+
+  .img-user-smile-container-in-home {
+    width: 100%;
+  }
+
+  .overlay-gls-user {
+    height: 220px;
+  }
+
+  .overlay-gls-user h2 {
+    font-size: 45px;
+  }
+
+  .overlay-gls-user h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .single-fun-add-feature-right {
+    min-width: 40%;
+    margin: 5px;
+    background-color: white;
+    padding: 6px 6px;
+    border-radius: 4px;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .image-holder-dv-in {
+    height: 200px;
+  }
+
+  .img-user-smile-container-in-home {
+    width: 100%;
+  }
+
+  .overlay-gls-user {
+    height: 200px;
+  }
+
+  .overlay-gls-user h2 {
+    font-size: 35px;
+  }
+
+  .overlay-gls-user h3 {
+    font-size: 14px;
+    bottom: 0px;
+  }
+}
