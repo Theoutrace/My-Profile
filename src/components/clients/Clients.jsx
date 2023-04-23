@@ -49,17 +49,7 @@ const Clients = () => {
     },
   ];
   return (
-    <Box
-      sx={{
-        width: "65%",
-        minWidth: "1200px",
-        borderRadius: "10px",
-        marginBottom: "75px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="client-all-carousel-container-out">
       <Carousel
         show={1.5}
         swiping={true}
@@ -82,7 +72,7 @@ const Clients = () => {
           return <SingleClients item={item} />;
         })}
       </Carousel>
-    </Box>
+    </div>
   );
 };
 
