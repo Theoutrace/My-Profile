@@ -274,8 +274,115 @@
   }
 }
 @media screen and (max-width: 850px) {
+  .dv-contained-in-bnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 430px;
+    position: relative;
+  }
+  .section-dv-both {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .section-dv-both:last-child {
+    width: 560px;
+    height: 380px;
+  }
+
+  .section-dv-both h2 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 80px;
+  }
+  .section-dv-both p {
+    font-size: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+  }
+
+  .section-dv-both img {
+    width: 80px;
+    position: absolute;
+    left: 35px;
+    top: -170px;
+  }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 620px) {
+  .dv-contained-in-bnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 380px;
+    position: relative;
+  }
+
+  .section-dv-both:last-child {
+    width: 410px;
+    height: 340px;
+  }
+
+  .section-dv-both h2 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .section-dv-both p {
+    font-size: 16px;
+    padding-right: 20px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .section-dv-both img {
+    width: 60px;
+    position: absolute;
+    left: 30px;
+    top: -165px;
+  }
 }
+
 @media screen and (max-width: 460px) {
+  .dv-contained-in-bnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 380px;
+    position: relative;
+  }
+
+  .section-dv-both:last-child {
+    width: 350px;
+    height: 350px;
+  }
+
+  .section-dv-both h2 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .section-dv-both p {
+    font-size: 14px;
+    padding-right: 20px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .section-dv-both img {
+    width: 60px;
+    position: absolute;
+    left: 30px;
+    top: -160px;
+  }
 }
