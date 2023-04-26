@@ -11,6 +11,11 @@ font-family: 'Quicksand', sans-serif;
   background-color: #000000;
   overflow-x: hidden;
 }
+*:focus {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
 
 .App {
   font-family: "Quicksand", "Poppins", sans-serif;
