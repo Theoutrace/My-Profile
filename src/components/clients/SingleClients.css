@@ -1,3 +1,36 @@
+.single-client-box-outer {
+  background-color: blueviolet;
+  background-color: #f5f5f7;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 20px;
+  color: black;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.single-client-box-outer:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.div-img-container-sngl-cli-ent {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.div-img-container-sngl-cli-ent img {
+  width: 80px;
+}
+
 .client-website-website {
   font-weight: 500;
   margin: 0px;
@@ -31,8 +64,16 @@
   .p-intro-client-single {
     padding: 0px 0px 5px 20px;
     margin: 0px;
-    font-weight: 600;
+    font-weight: 500;
     height: 150px;
+  }
+
+  .client-website-text {
+    font-size: 20px;
+    color: black;
+  }
+  .client-website-website {
+    font-size: 16px;
   }
 
   .about-text--client-single {
@@ -44,12 +85,78 @@
 }
 
 @media screen and (max-width: 620px) {
+  .single-client-box-outer {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .single-client-box-outer:hover {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+
+  .div-img-container-sngl-cli-ent {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  }
+
+  .div-img-container-sngl-cli-ent img {
+    width: 50px;
+  }
   .client-website-text {
-    font-size: 22px;
-    font-weight: 600;
-    text-align: left;
-    margin: 0px;
+    font-size: 16px;
     color: black;
-    padding: 0px;
+  }
+  .client-website-website {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .single-client-box-outer {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  .single-client-box-outer:hover {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  .about-text--client-single {
+    padding: 5px 15px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .p-intro-client-single {
+    padding: 0px 0px 5px 15px;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    height: 110px;
+  }
+
+  .div-img-container-sngl-cli-ent {
+    background-color: white;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+  }
+  .client-website-text {
+    font-size: 16px;
+    color: black;
+  }
+  .client-website-website {
+    font-size: 12px;
   }
 }

@@ -1,6 +1,6 @@
 .client-all-carousel-container-out {
   width: 65%;
-  min-width: 1200px;
+  width: 1200px;
   border-radius: 10px;
   margin-bottom: 75px;
   display: flex;
@@ -37,18 +37,18 @@
 
 @media screen and (max-width: 1300px) {
   .client-all-carousel-container-out {
-    min-width: 900px;
+    width: 900px;
   }
 }
 @media screen and (max-width: 1000px) {
   .client-all-carousel-container-out {
-    min-width: 800px;
+    width: 800px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .client-all-carousel-container-out {
-    min-width: 600px;
+    width: 600px;
   }
   .pointer-aro {
     display: none;
@@ -57,7 +57,18 @@
 
 @media screen and (max-width: 620px) {
   .client-all-carousel-container-out {
-    min-width: 600px;
+    width: 550px;
+    height: 300px;
+  }
+  .pointer-aro {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .client-all-carousel-container-out {
+    width: 400px;
+    height: 300px;
   }
   .pointer-aro {
     display: none;
